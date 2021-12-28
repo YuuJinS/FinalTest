@@ -72,12 +72,13 @@ app.get(
 		logger.warn(
 			"Process Stop!",
 		);
-		res.render(
-			"exit",
-			{
-				title: "exit",
-			},
-		);
+		setTimeout(
+			res.render(
+				"exit",
+				{
+					title: "exit",
+				},
+			), 3000);
 		process.exit(
 			0,
 		);
