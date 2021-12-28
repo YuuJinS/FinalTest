@@ -1,0 +1,12 @@
+<% layout('layout') %>
+<h1><%= title %></h1>
+<%- titleH2 %> <% if(show) { %>
+<p>條件滿足</p>
+<% } else { %>
+<p>條件不滿足</p>
+<%} %>
+<ul>
+	<% for(var i=0;i< foods.length;i++){ %>
+	<li><%-foods[i] %></li>
+	<% } %>
+</ul>
