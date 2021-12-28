@@ -54,7 +54,10 @@ app.get(
 		res.render(
 			"index",
 			{
-				title: "Home",
+				"title": "Home",
+				"titleH2": "<h2>第二級標題</h2>",
+				"show": true,
+				"foods": ["apple", "banana", "mongo"],
 			},
 		);
 	},
@@ -68,6 +71,12 @@ app.get(
 	) {
 		logger.warn(
 			"Process Stop!",
+		);
+		res.render(
+			"exit",
+			{
+				title: "exit",
+			},
 		);
 		process.exit(
 			0,
@@ -83,5 +92,5 @@ app.listen(
 	port,
 );
 logger.info(
-	"Process Start @ https://localhost !",
+	"Process Start @ http://localhost/ !",
 );
