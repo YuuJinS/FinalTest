@@ -83,5 +83,5 @@ app.listen(
 	port,
 );
 logger.info(
-	"Process Start!",
+	"Process Start @ https://localhost !",
 );
