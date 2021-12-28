@@ -1,10 +1,11 @@
 {
   "name": "finaltest",
   "version": "1.0.0",
-  "description": "",
+  "description": "my final test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cls && node .",
+    "test": "cls && nodemon ."
   },
   "keywords": [],
   "author": "友人Ｓ@プロジェクトＣＳＪ <yuujins@project.csj> (http://project.csj/)",
