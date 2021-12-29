@@ -93,6 +93,7 @@
             "always"
         ],
         "prefer-const": "error",
+        "properties": "never",
         "quotes": [
             "error",
             "double"
