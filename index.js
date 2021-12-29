@@ -23,10 +23,7 @@ app.get("/", function(req, res) {
 	logger.info("Someone comes to our site's home page");
 	res.render("index",
 		{
-			title: "Home",
-			titleH2: "<h2>第二級標題</h2>",
-			show: false,
-			foods: ["apple", "banana", "mongo"],
+			title: "展示頁面",
 		});
 });
 
