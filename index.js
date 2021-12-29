@@ -23,7 +23,7 @@ app.get("/", function(req, res) {
 	logger.info("Someone comes to our site's home page");
 	res.render("index",
 		{
-			title: "展示頁面",
+			page: "展示頁面",
 		});
 });
 
