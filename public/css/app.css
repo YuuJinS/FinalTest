@@ -11,10 +11,10 @@ body {
 }
 
 body {
-	margin     : 0 auto;
-	padding-top: 70px;
-	font-family: naikaifont, serif;
-	font-size  : 24px;
+	margin        : 0 auto;
+	padding-top   : 70px;
+	font-family   : naikaifont, serif;
+	/* font-size  : 24px; */
 }
 
 table {
@@ -103,4 +103,18 @@ tfoot {
 	border-radius        : 6px 0 6px 6px;
 }
 
-h1#title {}
+h1#title {
+	padding-right: 70px;
+	text-align   : right;
+}
+
+form {
+	margin-left: 80pt;
+	margin-top : 5pt;
+}
+
+img {
+	margin-left: 100pt;
+	;
+	margin-top: 25pt;
+}
