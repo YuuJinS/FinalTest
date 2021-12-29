@@ -18,24 +18,39 @@ const logger = require("node-color-log");
 logger.setLevel("info");
 logger.setDate(() => new Date().toLocaleString());
 
+// Calc
+
 // Router
 app.get("/", function(req, res) {
 	logger.info("Someone comes to our site's home page");
 	res.render("index",
 		{
 			page: "展示頁面",
+			title: "陳思鏡 小吃部",
 		});
+	res.status(200).end();
 });
 
 app.get("/exit", function(req, res) {
 	logger.warn("Process Stop!");
 	res.render("exit", {
-		title: "exit",
+		page: "exit",
 	});
+	res.status(200).end();
 	setTimeout(function() {process.exit(0);}, 3000);
+});
+
+app.post("/", function(req, res) {
+	res.render("index",
+		{
+			page: "展示頁面",
+			title: "陳思鏡 小吃部",
+		});
+	res.status(200).end();
 });
 
 // Process Start
 logger.info("Starting Process");
 app.listen(port);
 logger.info("Process Start!");
+logger.info("View your page in http://localhost");
