@@ -1,2 +1,83 @@
 <% layout('layout') %>
-<h1 id="title"><%=title%></h1>
+	<h1 id="title">
+		<%=title%>
+	</h1>
+	<div>
+		<form action="calc()" method="post">
+			<p>請選擇您的餐點及份數：</p>
+			<input type="checkbox" name="niu_rou_mian" id="niu_rou_mian"/>
+			<label for="niu_rou_mian">牛肉麵(90元)</label>
+			<select name="niu_rou_mian" id="niu_rou_mian">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="checkbox" name="da_lu_mian" id="da_lu_mian"/>
+			<label for="da_lu_mian">大滷麵(60元)</label>
+			<select name="da_lu_mian" id="da_lu_mian">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="checkbox" name="hun_tun_mian" id="hun_tun_mian"/>
+			<label for="hun_tun_mian">餛飩麵(70元)</label>
+			<select name="hun_tun_mian" id="hun_tun_mian">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="checkbox" name="za_jiang_mian" id="za_jiang_mian"/>
+			<label for="za_jiang_mian">雜醬麵(50元)</label>
+			<select name="za_jiang_mian" id="za_jiang_mian">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<br />
+			<input type="checkbox" name="lu_rou_fan" id="lu_rou_fan"/>
+			<label for="lu_rou_fan">滷肉飯(40元)</label>
+			<select name="lu_rou_fan" id="lu_rou_fan">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="checkbox" name="pai_gu_fan" id="pai_gu_fan"/>
+			<label for="pai_gu_fan">排骨飯(80元)</label>
+			<select name="pai_gu_fan" id="pai_gu_fan">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="checkbox" name="ji_tui_fan" id="ji_tui_fan"/>
+			<label for="ji_tui_fan">雞腿飯(100元)</label>
+			<select name="ji_tui_fan" id="ji_tui_fan">
+				<option value="0">請選擇</option>
+				<option value="1">1份</option>
+				<option value="2">2份</option>
+				<option value="3">3份</option>
+				<option value="4">4份</option>
+				<option value="5">5份</option>
+			</select>
+			<input type="submit" value="submit">
+		</form>
+		<img src="img/food.jpg" alt="food">
+	</div>
+	<script src="js/calc.js"></script>
